@@ -64,7 +64,7 @@ export function Header() {
               </Link>
             </motion.div>
             <span className="block text-sm md:text-base mt-2 md:mt-0 md:ml-4 font-medium" style={{ color: '#bfa14a' }}>
-              Growth & Revenue Consultant | Digital Strategy & Market Expansion
+              Growth & Revenue Consultant | Growth & Market Expansion
             </span>
           </div>
 
@@ -175,7 +175,7 @@ export function Hero() {
           className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4"
           style={{ color: '#bfa14a' }}
         >
-          Hi, I&apos;m Eleonora Berylo.
+          Hi, I&apos;m Ella, a Founder of ELAR Group.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 50 }}

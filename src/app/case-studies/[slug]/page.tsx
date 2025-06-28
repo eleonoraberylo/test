@@ -1,7 +1,7 @@
 'use client'
 
 import { notFound } from 'next/navigation'
-import { projects } from '@/src/components/projectsData'
+import { projects } from '../../../components/projectsData'
 import Image from 'next/image'
 
 export default function CaseStudyPage({ params }: { params: { slug: string } }) {

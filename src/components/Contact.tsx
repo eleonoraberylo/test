@@ -99,7 +99,7 @@ export function Contact() {
               </h3>
               <p className="leading-relaxed mb-8" style={{ color: "#6b5b2e" }}>
                 I'm always interested in hearing about new opportunities, interesting projects, 
-                or just having a conversation about technology, behavior health research and demand generation needs. Whether you're a company 
+                or just having a conversation about technology, demand generation needs or promt engineering. Whether you're a company 
                 looking to hire, a demand generation consultant, or someone with a 
                 project idea, feel free to reach out.
               </p>

@@ -37,7 +37,7 @@ export function Footer() {
               Ella
             </Link>
             <span className="block text-sm md:text-base font-medium" style={{ color: '#bfa14a' }}>
-              App Growth Strategist | In-App Monetization & Subscription Revenue Expert
+              Revenue Generation & Growth
             </span>
             <div className="flex space-x-4 mt-2">
               {socialLinks.map(({ href, icon: Icon, label }) => (
@@ -95,7 +95,7 @@ export function Footer() {
             <div className="space-y-2" style={{ color: '#6b5b2e' }}>
               <p>
                 <a href="mailto:hello@ella.dev" className="hover:underline" style={{ color: '#6b5b2e' }}>
-                  hello@ella.dev
+                  hello@ella.berylo
                 </a>
               </p>
               <p>Seattle, WA</p>

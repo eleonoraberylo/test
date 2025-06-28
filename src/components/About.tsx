@@ -10,7 +10,7 @@ export function About() {
       title: 'Business Development',
       description: 'Revenue growth, client portfolio expansion, project management',
       items: [
-        'Consulting',
+        'GTM Strategy',
         'Strategic Partnerships',
         'Sales Development',
         'Account Management',
@@ -25,10 +25,9 @@ export function About() {
       description: 'Generative AI, conversational AI, cloud computing, website building, prompt engineering',
       items: [
         'Google Cloud',
-        'AWS',
-        'Microsoft Azure',
+        'AWS - Cloud Computing',
         'ServiceNow',
-        'Website Building',
+        'Website Development',
         'Prompt Engineering',
         'Generative AI'
       ]
@@ -42,9 +41,9 @@ export function About() {
         'Salesforce',
         'LinkedIn',
         'ZoomInfo',
-        'Google Analytics',
         'ASA',
         'Adapty',
+        'App Store Optimization',
         'Video Editing'
       ]
     },
@@ -100,7 +99,7 @@ export function About() {
             About Me
           </h2>
           <p className="text-lg max-w-3xl mx-auto" style={{ color: '#6b5b2e' }}>
-            I’m Eleonora Berylo, a Growth & Revenue Consultant specializing in digital strategy, business development, and market expansion. I help companies unlock new opportunities, drive revenue, and build innovative solutions across industries.
+            I’m Ella, a proud Ukrainian, a business founder, and a growth & revenue consultant specializing in GTM strategy, business development, and market expansion. I help companies unlock new opportunities, drive revenue, and build innovative solutions across industries.
           </p>
         </motion.div>
 
@@ -114,14 +113,15 @@ export function About() {
             className="space-y-6 bg-[#f6ecd9] rounded-2xl p-8"
           >
             <h3 className="text-2xl font-semibold mb-2" style={{ color: '#bfa14a' }}>
-              My Journey
+              About Me
             </h3>
             <div className="space-y-4 leading-relaxed" style={{ color: '#6b5b2e' }}>
               <p>
-                My career is dedicated to consulting, digital strategy, and project management, with a focus on driving revenue growth and expanding client portfolios. I have helped companies leverage technology, enter new markets, and build high-performing teams.
+                My career is dedicated to demand generation, growth strategy, and digital marketing. I have helped companies leverage technology, enter new markets, and build high-performing teams.
               </p>
               <p>
-                I hold an Associate of Science in Business Technology Management from Seattle Central College, with expertise in Cloud Computing, Microsoft business productivity apps, and digital marketing tools. My certifications from Apple, Google, AWS, and ServiceNow reflect my commitment to professional growth in AI, DevOps, Data & Analytics, and Digital Marketing.
+                I hold an Associate of Science in Business Technology Management from Seattle Central College, with expertise in cloud computing, Microsoft business productivity apps, and digital marketing tools. 
+                My certifications from Apple Search Ads, Amazone Web Services, DataBricks and ServiceNow reflect my commitment to professional growth in AI, Digital Marketing, and Engineering.
               </p>
               <p>
                 I approach every challenge with a growth mindset and a passion for exploring new markets. My goal is to deliver value to clients, guiding them through their product and business development journey.
@@ -135,21 +135,21 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative bg-white rounded-2xl p-0 flex items-center justify-center"
-            style={{ minHeight: '20rem' }}
+            className="relative p-8 flex justify-center items-center"
           >
-            <img
-              src="/headshot.jpg"
-              alt="Eleonora Berylo headshot"
-              className="w-full h-full"
-              style={{
-                objectFit: 'contain',
-                borderRadius: '0',
-                border: 'none',
-                boxShadow: 'none',
-                background: 'none'
-              }}
-            />
+            <div className="relative flex flex-col items-center">
+              <img
+                src="/headshot.jpg"
+                alt="Eleonora Berylo headshot"
+                className="w-96 h-[33rem] object-cover mb-4"
+                style={{
+                  borderRadius: '0', // No roundness
+                  border: 'none',
+                  boxShadow: 'none',
+                  background: 'none'
+                }}
+              />
+            </div>
           </motion.div>
         </div>
 
@@ -201,15 +201,14 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+          className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 justify-items-center text-center"
         >
           {[
             { number: '50+', label: 'Projects Completed' },
-            { number: '5+', label: 'Years Experience' },
+            { number: '8+', label: 'Years Experience' },
             { number: '20+', label: 'Happy Clients' },
-            { number: '100%', label: 'Code Quality' },
           ].map((stat) => (
-            <div key={stat.label} className="space-y-2">
+            <div key={stat.label} className="space-y-2 flex flex-col items-center">
               <div className="text-3xl font-bold" style={{ color: '#bfa14a' }}>{stat.number}</div>
               <div className="text-sm" style={{ color: '#6b5b2e' }}>{stat.label}</div>
             </div>
