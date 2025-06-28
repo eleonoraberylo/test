@@ -86,7 +86,7 @@ export function About() {
   }
 
   return (
-    <section id="about" className="py-20" style={{ background: '#fff' }}>
+    <section className="py-20 bg-white dark:bg-[#232323]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -95,11 +95,13 @@ export function About() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#bfa14a' }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#bfa14a] dark:text-[#f6ecd9]">
             About Me
           </h2>
-          <p className="text-lg max-w-3xl mx-auto" style={{ color: '#6b5b2e' }}>
-            I’m Ella, a proud Ukrainian, a business founder, and a growth & revenue consultant specializing in GTM strategy, business development, and market expansion. I help companies unlock new opportunities, drive revenue, and build innovative solutions across industries.
+          <p className="text-lg max-w-3xl mx-auto text-[#6b5b2e] dark:text-[#f6ecd9]">
+            I’m Ella, a proud Ukrainian, a business founder, and a growth & revenue consultant specializing in GTM strategy, business development, mobile marketing and market expansion. 
+            
+            I help companies unlock new opportunities, drive revenue, and build innovative solutions across industries.
           </p>
         </motion.div>
 
@@ -117,7 +119,8 @@ export function About() {
             </h3>
             <div className="space-y-4 leading-relaxed" style={{ color: '#6b5b2e' }}>
               <p>
-                My career is dedicated to demand generation, growth strategy, and digital marketing. I have helped companies leverage technology, enter new markets, and build high-performing teams.
+                My career is dedicated to business development, demand generation, and digital marketing. 
+                I have helped companies leverage technology, enter new markets, and implement effective processes.
               </p>
               <p>
                 I hold an Associate of Science in Business Technology Management from Seattle Central College, with expertise in cloud computing, Microsoft business productivity apps, and digital marketing tools. 

@@ -2,12 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X, Moon, Sun } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -17,21 +14,6 @@ export function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  useEffect(() => {
-    // Check for dark mode preference
-    const isDark = localStorage.getItem('darkMode') === 'true' || 
-      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    setIsDarkMode(isDark)
-    document.documentElement.classList.toggle('dark', isDark)
-  }, [])
-
-  const toggleDarkMode = () => {
-    const newDarkMode = !isDarkMode
-    setIsDarkMode(newDarkMode)
-    localStorage.setItem('darkMode', newDarkMode.toString())
-    document.documentElement.classList.toggle('dark', newDarkMode)
-  }
 
   const navigation = [
     { name: 'Home', href: '#home' },
@@ -46,103 +28,35 @@ export function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white ${
-        isScrolled
-          ? 'shadow-md border-b border-[#e5e7eb]' // subtle border when scrolled
-          : ''
+        isScrolled ? 'shadow-md border-b border-[#e5e7eb]' : ''
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row h-auto md:h-16 items-center justify-between py-4 md:py-0">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo and Tagline */}
-          <div className="flex flex-col md:flex-row items-center md:space-x-6 w-full md:w-auto">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link href="/" className="text-2xl font-bold" style={{ color: '#bfa14a' }}>
-                Ella
-              </Link>
-            </motion.div>
-            <span className="block text-sm md:text-base mt-2 md:mt-0 md:ml-4 font-medium" style={{ color: '#bfa14a' }}>
-              Growth & Revenue Consultant | Growth & Market Expansion
+          <div className="flex items-center space-x-4">
+            <Link href="/" className="text-2xl font-extrabold tracking-tight" style={{ color: '#bfa14a' }}>
+              ELAR GROUP
+            </Link>
+            <span className="hidden sm:block text-sm font-medium tracking-wide" style={{ color: '#bfa14a' }}>
+              Growth Strategy & Demand Generation
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="transition-colors duration-200 relative group"
-                style={{ color: '#6b5b2e' }}
+                className="relative px-2 py-1 font-medium transition-colors duration-200 hover:text-[#bfa14a] text-[#6b5b2e]"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#bfa14a' }} />
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#bfa14a] transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
-            {/* Dark Mode Toggle */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full hover:bg-[#f6ecd9] transition-colors"
-              aria-label="Toggle dark mode"
-              style={{ color: '#bfa14a' }}
-            >
-              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </motion.button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4 mt-4 md:mt-0">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full hover:bg-[#f6ecd9] transition-colors"
-              aria-label="Toggle dark mode"
-              style={{ color: '#bfa14a' }}
-            >
-              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md hover:bg-[#f6ecd9] transition-colors"
-              aria-label="Toggle menu"
-              style={{ color: '#bfa14a' }}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </motion.button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="md:hidden border-t border-border bg-background/95 backdrop-blur-md"
-            >
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block px-3 py-2 text-foreground hover:text-primary hover:bg-accent rounded-md transition-colors"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </nav>
     </motion.header>
   )

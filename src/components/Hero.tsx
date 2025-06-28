@@ -52,7 +52,7 @@ export function Hero() {
               className="text-xl sm:text-2xl lg:text-3xl"
               style={{ color: "#bfa14a" }}
             >
-              Growth & Revenue Consultant
+              A Founder of ELAR Group
             </motion.p>
           </div>
 
@@ -64,7 +64,7 @@ export function Hero() {
             className="max-w-2xl mx-auto text-lg leading-relaxed"
             style={{ color: "#6b5b2e" }}
           >
-            I help organizations grow through digital strategy, business development, and market expansion. Let's create something impactful together.
+            I help organizations grow through demand generatation, business development, and market expansion. Let's create something impactful together!
           </motion.p>
 
           {/* Social Links */}

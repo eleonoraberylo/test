@@ -66,7 +66,7 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-20" style={{ background: "#fff" }}>
+    <section id="contact" className="py-20 bg-white dark:bg-[#232323]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -75,10 +75,10 @@ export function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#bfa14a" }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#bfa14a] dark:text-[#f6ecd9]">
             Let's Work Together
           </h2>
-          <p className="text-lg max-w-3xl mx-auto" style={{ color: "#6b5b2e" }}>
+          <p className="text-lg max-w-3xl mx-auto text-[#6b5b2e] dark:text-[#f6ecd9]">
             Have a project in mind or just want to chat? I'd love to hear from you. 
             Let's create something amazing together.
           </p>
@@ -94,10 +94,10 @@ export function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold mb-6" style={{ color: "#bfa14a" }}>
+              <h3 className="text-2xl font-semibold mb-6 text-[#bfa14a]">
                 Get in Touch
               </h3>
-              <p className="leading-relaxed mb-8" style={{ color: "#6b5b2e" }}>
+              <p className="leading-relaxed mb-8 text-[#6b5b2e] dark:text-[#f6ecd9]">
                 I'm always interested in hearing about new opportunities, interesting projects, 
                 or just having a conversation about technology, demand generation needs or promt engineering. Whether you're a company 
                 looking to hire, a demand generation consultant, or someone with a 

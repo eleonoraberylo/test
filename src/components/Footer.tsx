@@ -135,29 +135,6 @@ export function Footer() {
             </a>
           </div>
         </motion.div>
-
-        {/* Back to Top */}
-        <motion.button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="fixed bottom-8 right-8 p-3 rounded-full shadow-lg hover:shadow-xl transition-all z-40"
-          style={{ background: '#bfa14a', color: '#fff' }}
-          aria-label="Back to top"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m18 15-6-6-6 6" />
-          </svg>
-        </motion.button>
       </div>
     </footer>
   )
