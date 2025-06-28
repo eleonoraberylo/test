@@ -79,7 +79,7 @@ export function Contact() {
             Let&apos;s Work Together
           </h2>
           <p className="text-lg max-w-3xl mx-auto text-[#6b5b2e] dark:text-[#f6ecd9]">
-            Have a project in mind or just want to chat? I'd love to hear from you. 
+            Have a project in mind or just want to chat? I&apos;d love to hear from you. 
             Let&apos;s create something amazing together.
           </p>
         </motion.div>

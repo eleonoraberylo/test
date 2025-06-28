@@ -174,7 +174,7 @@ export default function BlogPage() {
                   overflowX: "auto",
                   whiteSpace: "pre",
                 }}
-              >{`I'm preparing a QBR presentation. Compare:
+              >{`I&apos;m preparing a QBR presentation. Compare:
 A: "Our acquisition cost remains above target, but initiatives are in motion."
 B: "We&apos;re behind on CAC, but we&apos;ve modeled recovery against high-intent segments."
 How will each be received by a skeptical CFO?`}</pre>
@@ -376,7 +376,7 @@ Audience: B2B ops professionals who tend to resist hype language.`}</pre>
               Moreover, LLMs currently lean toward neutrality and user-alignment in ambiguous situations. This was illustrated in one of our early test failures, where two users simulated opposing perspectives in the same relational conflict. Despite differing input tones and behavioral records, the model generated affirming, user-friendly feedback for both sides — effectively validating contradictory experiences.
             </p>
             <p>
-              This highlights a key challenge: while the simulation is valuable for perspective shaping and narrative clarity, it is not a deterministic truth engine. Rather, it’s a probabilistic modeling tool that mirrors language patterns under the constraints of input granularity.
+              This highlights a key challenge: while the simulation is valuable for perspective shaping and narrative clarity, it is not a deterministic truth engine. Rather, it&apos;s a probabilistic modeling tool that mirrors language patterns under the constraints of input granularity.
             </p>
             <ul className="list-disc pl-6">
               <li>Stress-testing the methodology across contrasting cohorts (e.g., performance reviews vs. coaching vs. partner conflict)</li>
