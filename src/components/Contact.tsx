@@ -76,11 +76,11 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#bfa14a] dark:text-[#f6ecd9]">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg max-w-3xl mx-auto text-[#6b5b2e] dark:text-[#f6ecd9]">
             Have a project in mind or just want to chat? I'd love to hear from you. 
-            Let's create something amazing together.
+            Let&apos;s create something amazing together.
           </p>
         </motion.div>
 
@@ -98,8 +98,8 @@ export function Contact() {
                 Get in Touch
               </h3>
               <p className="leading-relaxed mb-8 text-[#6b5b2e] dark:text-[#f6ecd9]">
-                I'm always interested in hearing about new opportunities, interesting projects, 
-                or just having a conversation about technology, demand generation needs or promt engineering. Whether you're a company 
+                I&apos;m always interested in hearing about new opportunities, interesting projects, 
+                or just having a conversation about technology, demand generation needs or promt engineering. Whether you&apos;re a company 
                 looking to hire, a demand generation consultant, or someone with a 
                 project idea, feel free to reach out.
               </p>
@@ -173,7 +173,7 @@ export function Contact() {
                   Message Sent Successfully!
                 </h3>
                 <p style={{ color: "#6b5b2e" }}>
-                  Thank you for reaching out. I'll get back to you soon.
+                  Thank you for reaching out. I&apos;ll get back to you soon.
                 </p>
               </motion.div>
             ) : (

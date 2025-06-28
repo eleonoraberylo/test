@@ -60,15 +60,16 @@ export default function BlogPage() {
             <div className="space-y-4">
               <p>To support transparency and reproducibility, this section outlines how LLM-based scenario testing works under the hood. While real-time responses are natural language-based, the underlying logic includes internal data labeling, reasoning traceability, and probabilistic estimation of outcomes.</p>
               <h3 className="text-lg font-semibold mt-6 mb-2" style={{ color: "#bfa14a" }}>Core Input Format:</h3>
-              <div className="overflow-x-auto rounded-lg mb-4">
+              <div className="overflow-x-auto rounded-lg mb-4 bg-[#f6ecd9] border border-[#bfa14a]">
                 <pre
                   style={{
-                    background: "#f6ecd9",
+                    background: "transparent", // Let the parent div handle the background
                     color: "#6b5b2e",
-                    border: "1px solid #bfa14a",
-                    borderRadius: 8,
+                    border: "none",
+                    borderRadius: 0,
                     padding: 16,
                     minWidth: 320,
+                    margin: 0,
                   }}
                 >{`{
   "prompt": "Should I say X or Y to this person?",
@@ -106,7 +107,7 @@ export default function BlogPage() {
 
               <h3 className="text-lg font-semibold mt-6 mb-2" style={{ color: "#bfa14a" }}>Reasoning Trace (LLM Perspective)</h3>
               <ul className="list-disc pl-6">
-                <li>Based on user's role and partner's escalation history...</li>
+                <li>Based on user&apos;s role and partner&apos;s escalation history...</li>
                 <li>Language in Option X aligns with prior conflict-resolution triggers...</li>
                 <li>Probability of defensive reply is low given collaborative phrasing and lack of implicit blame...</li>
                 <li>Matches previously validated de-escalation messaging tone...</li>
@@ -160,18 +161,49 @@ export default function BlogPage() {
           {/* Example Prompt */}
           <div>
             <h3 className="text-lg font-semibold mt-6 mb-2" style={{ color: "#bfa14a" }}>Example Prompt:</h3>
-            <div className="overflow-x-auto rounded-lg mb-4">
-              <pre style={{
-                background: "#f6ecd9",
-                color: "#6b5b2e",
-                border: "1px solid #bfa14a",
-                borderRadius: 8,
-                padding: 16,
-                minWidth: 320,
-              }}>{`I'm preparing a QBR presentation. Compare:
+            <div className="overflow-x-auto mb-4">
+              <pre
+                className="rounded-lg bg-[#f6ecd9] border border-[#bfa14a] w-fit min-w-full"
+                style={{
+                  color: "#6b5b2e",
+                  padding: 16,
+                  margin: 0,
+                  fontFamily: "inherit",
+                  fontSize: "1rem",
+                  boxSizing: "border-box",
+                  overflowX: "auto",
+                  whiteSpace: "pre",
+                }}
+              >{`I'm preparing a QBR presentation. Compare:
 A: "Our acquisition cost remains above target, but initiatives are in motion."
-B: "We’re behind on CAC, but we've modeled recovery against high-intent segments."
+B: "We&apos;re behind on CAC, but we&apos;ve modeled recovery against high-intent segments."
 How will each be received by a skeptical CFO?`}</pre>
+            </div>
+          </div>
+
+          {/* Case Study 2 Prompt */}
+          <div>
+            <h3 className="text-lg font-semibold mt-6 mb-2" style={{ color: "#bfa14a" }}>Case Study 2: Marketing Messaging Optimization</h3>
+            <p>
+              A SaaS growth strategist used the simulation method to refine messaging across funnel stages. Historical ad copy and email responses were submitted, and message variants were tested:
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <pre
+                className="rounded-lg bg-[#f6ecd9] border border-[#bfa14a] w-fit min-w-full"
+                style={{
+                  color: "#6b5b2e",
+                  padding: 16,
+                  margin: 0,
+                  fontFamily: "inherit",
+                  fontSize: "1rem",
+                  boxSizing: "border-box",
+                  overflowX: "auto",
+                  whiteSpace: "pre",
+                }}
+              >{`Which CTA better drives urgency without triggering skepticism?
+A: "Act now to take back control."
+B: "Unlock better results with less effort."
+Audience: B2B ops professionals who tend to resist hype language.`}</pre>
             </div>
           </div>
 
@@ -261,15 +293,20 @@ How will each be received by a skeptical CFO?`}</pre>
             <p>
               A SaaS growth strategist used the simulation method to refine messaging across funnel stages. Historical ad copy and email responses were submitted, and message variants were tested:
             </p>
-            <div className="overflow-x-auto rounded-lg mb-4">
-              <pre style={{
-                background: "#f6ecd9",
-                color: "#6b5b2e",
-                border: "1px solid #bfa14a",
-                borderRadius: 8,
-                padding: 16,
-                minWidth: 320,
-              }}>{`Which CTA better drives urgency without triggering skepticism?
+            <div className="overflow-x-auto mb-4">
+              <pre
+                className="rounded-lg bg-[#f6ecd9] border border-[#bfa14a] w-fit min-w-full"
+                style={{
+                  color: "#6b5b2e",
+                  padding: 16,
+                  margin: 0,
+                  fontFamily: "inherit",
+                  fontSize: "1rem",
+                  boxSizing: "border-box",
+                  overflowX: "auto",
+                  whiteSpace: "pre",
+                }}
+              >{`Which CTA better drives urgency without triggering skepticism?
 A: "Act now to take back control."
 B: "Unlock better results with less effort."
 Audience: B2B ops professionals who tend to resist hype language.`}</pre>
@@ -345,7 +382,7 @@ Audience: B2B ops professionals who tend to resist hype language.`}</pre>
               <li>Stress-testing the methodology across contrasting cohorts (e.g., performance reviews vs. coaching vs. partner conflict)</li>
               <li>Evaluating failure patterns to determine where simulation is least effective or most bias-prone</li>
               <li>Expanding context ingestion methods, including inferred behavior across time</li>
-              <li>Exploring dual-user simulation environments, where both parties' data can be simultaneously modeled under structured parameters</li>
+              <li>Exploring dual-user simulation environments, where both parties&apos; data can be simultaneously modeled under structured parameters</li>
             </ul>
             <p>
               The goal remains clear: not to replace human judgment, but to build a replicable framework for complex interpersonal pattern forecasting that holds up across high-emotion and high-stakes environments.
@@ -355,15 +392,20 @@ Audience: B2B ops professionals who tend to resist hype language.`}</pre>
           {/* Final Probability Scenario & A/B Prompt */}
           <div>
             <h2 className="text-2xl font-semibold mb-4" style={{ color: "#bfa14a" }}>Final Probability Scenario & A/B Prompt</h2>
-            <div className="overflow-x-auto rounded-lg mb-4">
-              <pre style={{
-                background: "#f6ecd9",
-                color: "#6b5b2e",
-                border: "1px solid #bfa14a",
-                borderRadius: 8,
-                padding: 16,
-                minWidth: 320,
-              }}>{`{"scenario": "Release this paper internally vs publish externally","audience":"Senior buyers, exec coaches","A: Like the idea but keep private": 65%, "B: Support open publication": 35%}
+            <div className="overflow-x-auto mb-4">
+              <pre
+                className="rounded-lg bg-[#f6ecd9] border border-[#bfa14a] w-fit min-w-full"
+                style={{
+                  color: "#6b5b2e",
+                  padding: 16,
+                  margin: 0,
+                  fontFamily: "inherit",
+                  fontSize: "1rem",
+                  boxSizing: "border-box",
+                  overflowX: "auto",
+                  whiteSpace: "pre",
+                }}
+              >{`{"scenario": "Release this paper internally vs publish externally","audience":"Senior buyers, exec coaches","A: Like the idea but keep private": 65%, "B: Support open publication": 35%}
 Reasoning Trace: Many buyers prefer proprietary advantage and may view full transparency as diluting perceived value. Input asymmetry may raise questions about method bias.
 Commitment: We continue stress testing in real org settings and acknowledge known flaws in dual-side data input.`}</pre>
             </div>

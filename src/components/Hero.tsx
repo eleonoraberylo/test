@@ -32,7 +32,7 @@ export function Hero() {
               className="text-lg sm:text-xl"
               style={{ color: "#6b5b2e" }}
             >
-              Hi, I'm
+              Hi, I&apos;m
             </motion.p>
 
             <motion.h1
@@ -64,7 +64,7 @@ export function Hero() {
             className="max-w-2xl mx-auto text-lg leading-relaxed"
             style={{ color: "#6b5b2e" }}
           >
-            I help organizations grow through demand generatation, business development, and market expansion. Let's create something impactful together!
+            I help organizations grow through demand generatation, business development, and market expansion. Let&apos;s create something impactful together!
           </motion.p>
 
           {/* Social Links */}
