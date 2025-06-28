@@ -55,3 +55,12 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
     </section>
   )
 }
+
+export async function generateStaticParams() {
+  return [
+    { slug: 'demand-gen-strategy' },
+    { slug: 'public-sector-partnership' },
+    { slug: 'synthology-de' },
+    // ...add all real slugs from your projectsData
+  ]
+}
