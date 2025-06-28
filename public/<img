@@ -1,0 +1,6 @@
+<img
+  src="/headshot.jpg"
+  alt="Eleonora Berylo headshot"
+  className="w-64 h-80 object-cover mb-4"
+  style={{ borderRadius: '20%' }}
+/>
