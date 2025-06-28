@@ -75,9 +75,9 @@ export function Hero() {
             className="flex justify-center space-x-6"
           >
             {[
-              { href: 'https://github.com', icon: Github, label: 'GitHub' },
-              { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-              { href: 'mailto:hello@ella.dev', icon: Mail, label: 'Email' },
+              { href: 'https://github.com/eleonoraberylo', icon: Github, label: 'GitHub' },
+              { href: 'https://www.linkedin.com/in/eleonora-berylo/', icon: Linkedin, label: 'LinkedIn' },
+              { href: 'mailto:eleonoraberylo@gmail.com', icon: Mail, label: 'Email' },
             ].map(({ href, icon: Icon, label }) => (
               <motion.a
                 key={label}
