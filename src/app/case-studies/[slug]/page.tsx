@@ -1,5 +1,3 @@
-'use client'
-
 import { notFound } from 'next/navigation'
 import { projects } from '../../../components/projectsData'
 import Image from 'next/image'
