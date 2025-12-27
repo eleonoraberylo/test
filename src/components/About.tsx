@@ -42,9 +42,7 @@ export function About() {
         'LinkedIn',
         'ZoomInfo',
         'ASA',
-        'Adapty',
-        'App Store Optimization',
-        'Video Editing'
+        'App Store Optimization'
       ]
     },
     {
@@ -56,9 +54,8 @@ export function About() {
         'Growth Mindset',
         'Continuous Learning',
         'Giving back initiatives',
-        'Attending Industry Conferences',
-        'Workshops & Seminars',
-        'Networking Events',
+        'Workshops',
+        'ProfessionalNetworking',
         'Public Speaking'
       ]
     }
