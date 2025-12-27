@@ -11,8 +11,8 @@ export function Projects() {
       outcome: "Designed and executed a multi-channel demand generation plan, including targeted content marketing, SEO, and paid campaigns. Result: 180% increase in qualified inbound leads and a 35% reduction in cost per acquisition within 6 months."
     },
     {
-      title: "Public Sector Partnership for Seattle IT Consulting Firm",
-      problem: "A Seattle-based IT consulting firm lacked access to public sector contracts and needed to establish credibility with government clients.",
+      title: "Public Sector Partnership for a staffing firm",
+      problem: "A Seattle-based staffing firm lacked access to public sector contracts and needed to establish credibility with government clients.",
       challenge: "Navigating complex procurement processes and building trust with public sector stakeholders.",
       outcome: "Led partnership development efforts, resulting in a formal collaboration with the State of Oregon. This partnership opened a new revenue stream and contributed to a 27% increase in annual contract value."
     },
@@ -48,8 +48,8 @@ export function Projects() {
           </a>
           , helping clients achieve measurable improvements in acquisition, retention, and conversion.
         </>
-      )
-    }
+      ),
+    },
   ]
 
   const [openIndex, setOpenIndex] = useState<number | null>(null)
