@@ -3,7 +3,7 @@ import './globals.css'
 import {Header} from '../components/Header'
 
 export const metadata: Metadata = {
-  title: 'ElAR Group',
+  title: 'ELAR Group',
   description: 'Growth & Revenue Consultant specializing in digital strategy, business development, and market expansion for tech and SaaS companies.',
   keywords: ['portfolio', 'growth consultant', 'revenue', 'business development', 'digital strategy', 'market expansion'],
   authors: [{ name: 'Ella' }],
